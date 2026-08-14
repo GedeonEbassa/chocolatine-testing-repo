@@ -28,10 +28,10 @@ all:    $(NAME)
 $(NAME): $(SRC)
 	$(CC) -o $(NAME) $(SRC)
 clean:
-	rm -f $(NAME)
 	rm -f *~
 	rm -f #*
 	rm -f "*#"
 fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
