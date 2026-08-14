@@ -9,7 +9,6 @@ a.out
 *.txt
 
 test.c
-file.c
 
 test
 tester/
