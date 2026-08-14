@@ -35,6 +35,7 @@ jobs:
         run: make clean
 
       - name: Verify executables
+        shell: bash
         run: |
           IFS=',' read -ra EXECS <<< "$EXECUTABLES"
           for exec in "${EXECS[@]}"; do
